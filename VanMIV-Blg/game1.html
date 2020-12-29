@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Блог:Угадай число</title>
+</head>
+<body>
+    
+    <script>
+     var a = Math.ceil(Math.random()*101);  
+     var b = prompt('Введите число от 0 до 100');
+   while(a!=b){
+       if(a<b)
+       {
+           alert('Введенное число больше загаданного');
+           var b = prompt('Введите число от 0 до 100');
+       }
+    else if(a>b)
+    {
+        alert('Введенное число меньше загаданного');
+        var b = prompt('Введите число от 0 до 100');
+    }
+   
+ 
+   }
+   alert('Ура вы угадали число:',a);
+  </script> 
+</body>
+</html>
